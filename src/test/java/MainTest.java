@@ -12,4 +12,19 @@ public class MainTest {
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
 
+    @Test
+    public void testReverseStringWithNull() {
+        String input = null;
+        String actual = Main.reverseString(input);
+        assert actual == null : "Expected null, but got: " + actual;
+    }
+
+    @Test
+    public void testGetGreetingWithName() {
+        String name = "Alice";
+        String expected = "Hello, Alice!";
+        String actual = Main.getGreeting(name);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
+
 }

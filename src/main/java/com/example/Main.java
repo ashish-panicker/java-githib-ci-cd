@@ -6,6 +6,7 @@ public class Main {
         String input = "Hello, World!";
         String reversed = reverseString(input);
         System.out.println("Reversed String: " + reversed);
+
     }
 
     /**
@@ -19,5 +20,19 @@ public class Main {
             return null;
         }
         return new StringBuilder(input).reverse().toString();
+    }
+
+    /**
+     * Generates a greeting message.
+     * 
+     * @param name the name to include in the greeting
+     *             If name is null or empty, returns a default greeting.
+     * @return the greeting message
+     */
+    public static String getGreeting(String name) {
+        if (name == null || name.isEmpty()) {
+            return "Hello, Guest!";
+        }
+        return "Hello, " + name + "!";
     }
 }
