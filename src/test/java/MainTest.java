@@ -72,4 +72,41 @@ public class MainTest {
         String acutal = Main.nameUpperCase(name);
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
+
+     @Test
+    public void testSumWithPositiveNumbers() {
+        int a = 5;
+        int b = 10;
+        int expected = 15;
+        int actual = Main.sum(a, b);
+        assert expected == actual : "Expected: " + expected + ", but got: " + actual;
+    }
+
+    @Test
+    public void testSumWithNegativeNumbers() {
+        int a = -3;
+        int b = -7;
+        int expected = -10;
+        int actual = Main.sum(a, b);
+        assert expected == actual : "Expected: " + expected + ", but got: " + actual;
+    }
+
+    @Test
+    public void testSumWithPositiveAndNegativeNumber() {
+        int a = 8;
+        int b = -5;
+        int expected = 3;
+        int actual = Main.sum(a, b);
+        assert expected == actual : "Expected: " + expected + ", but got: " + actual;
+    }
+
+    @Test
+    public void testSumWithZero() {
+        int a = 0;
+        int b = 7;
+        int expected = 7;
+        int actual = Main.sum(a, b);
+        assert expected == actual : "Expected: " + expected + ", but got: " + actual;
+    }
+
 }

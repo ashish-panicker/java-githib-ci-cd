@@ -50,7 +50,16 @@ public class Main {
      * * @return the formatted employee ID string
      * * Example: If id is 45, the returned string will be "E00045".
      */
-    public static String createEmployeeId(int id) {
-        return String.format("E%05d", id);
+    
+    /**
+     * Returns the sum of two integers.
+     *
+     * @param a first number
+     * @param b second number
+     * @return sum of a and b
+     */
+    public static int sum(int a, int b) {
+    return a + b;
     }
+
 }
