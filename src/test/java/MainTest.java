@@ -27,4 +27,35 @@ public class MainTest {
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
 
+    @Test
+    public void testGetGreetingWithNull() {
+        String name = null;
+        String expected = "Hello, Guest!";
+        String actual = Main.getGreeting(name);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
+
+    @Test
+    public void testGetGreetingWithEmptyString() {
+        String name = "";
+        String expected = "Hello, Guest!";
+        String actual = Main.getGreeting(name);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
+
+    @Test
+    public void testCreateEmployeeId() {
+        int id = 45;
+        String expected = "E00045"; 
+        String actual = Main.createEmployeeId(id);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
+
+    @Test
+    public void testCreateEmployeeIdWithZero() {
+        int id = 0;
+        String expected = "E00000"; 
+        String actual = Main.createEmployeeId(id);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
 }
