@@ -12,7 +12,8 @@ public class Main {
         System.out.println(defaultGreeting);
         String employeeId = createEmployeeId(45);
         System.out.println("Employee ID: " + employeeId);
-
+        String name = "prasad";
+        System.out.println(nameUpperCAse(name));
     }
 
     /**
@@ -51,5 +52,13 @@ public class Main {
      */
     public static String createEmployeeId(int id) {
         return String.format("E%05d", id);
+    }
+    /*
+     *change lower case letter to upper case
+     * *@param name
+     * @return upper case name
+     */
+     public static String nameUpperCAse(String name) {
+        return name.toUpperCase();
     }
 }
