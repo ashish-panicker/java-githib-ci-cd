@@ -12,6 +12,9 @@ public class Main {
         System.out.println(defaultGreeting);
         String employeeId = createEmployeeId(45);
         System.out.println("Employee ID: " + employeeId);
+        int result = square(7);
+        System.out.println("Square of 7: " + result);
+
 
     }
 
@@ -52,4 +55,14 @@ public class Main {
     public static String createEmployeeId(int id) {
         return String.format("E%05d", id);
     }
+
+    /**
+ * Calculates the square of a number.
+ * 
+ * @param number the number to square
+ * @return the square of the number
+ */
+    public static int square(int number) {
+        return number * number;
+}
 }
