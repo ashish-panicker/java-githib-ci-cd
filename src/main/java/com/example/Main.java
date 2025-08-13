@@ -58,7 +58,7 @@ public class Main {
      * *@param name
      * @return upper case name
      */
-     public static String nameUpperCAse(String name) {
+     public static String nameUpperCase(String name) {
         return name.toUpperCase();
     }
 }
