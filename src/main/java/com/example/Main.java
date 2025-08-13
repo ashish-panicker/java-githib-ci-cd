@@ -6,6 +6,10 @@ public class Main {
         String input = "Hello, World!";
         String reversed = reverseString(input);
         System.out.println("Reversed String: " + reversed);
+        String greeting = getGreeting("Alice");
+        System.out.println(greeting);
+        String defaultGreeting = getGreeting(null);
+        System.out.println(defaultGreeting);
 
     }
 
