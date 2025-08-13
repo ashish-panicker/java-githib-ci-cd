@@ -10,6 +10,8 @@ public class Main {
         System.out.println(greeting);
         String defaultGreeting = getGreeting(null);
         System.out.println(defaultGreeting);
+        String employeeId = createEmployeeId(45);
+        System.out.println("Employee ID: " + employeeId);
 
     }
 
@@ -38,5 +40,16 @@ public class Main {
             return "Hello, Guest!";
         }
         return "Hello, " + name + "!";
+    }
+
+    /**
+     * Creates a unique employee ID starting with 'E' followed by a zero-padded
+     * number.
+     * * @param id the numeric part of the employee ID
+     * * @return the formatted employee ID string
+     * * Example: If id is 45, the returned string will be "E00045".
+     */
+    public static String createEmployeeId(int id) {
+        return String.format("E%05d", id);
     }
 }
