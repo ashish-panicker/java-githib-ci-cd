@@ -12,8 +12,12 @@ public class Main {
         System.out.println(greeting);
         String defaultGreeting = getGreeting(null);
         System.out.println(defaultGreeting);
-        String employeeId = createEmployeeId(45);
+        String employeeId = createEmployeeId(45,"hr");
         System.out.println("Employee ID: " + employeeId);
+        String departmentCodeString = "HR";
+        System.out.println("dpeartmentCode: " + departmentCodeString);
+        String employeeIdWithDepartment = createEmployeeId(45, departmentCodeString);
+        System.out.println("Employee ID with Department: " + employeeIdWithDepartment);
 
     }
 

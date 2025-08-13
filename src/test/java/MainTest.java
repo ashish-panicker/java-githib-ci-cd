@@ -47,7 +47,8 @@ public class MainTest {
     public void testCreateEmployeeId() {
         int id = 45;
         String expected = "E00045"; 
-        String actual = Main.createEmployeeId(id);
+        String departmentCode;
+        String actual = Main.createEmployeeId(id, departmentCode);
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
 
@@ -55,7 +56,8 @@ public class MainTest {
     public void testCreateEmployeeIdWithZero() {
         int id = 0;
         String expected = "E00000"; 
-        String actual = Main.createEmployeeId(id);
+        String actual = Main.createEmployeeId(id, "hr");
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
+
 }
