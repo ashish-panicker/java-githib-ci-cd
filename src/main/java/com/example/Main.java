@@ -12,7 +12,8 @@ public class Main {
         System.out.println(defaultGreeting);
         String employeeId = createEmployeeId(45);
         System.out.println("Employee ID: " + employeeId);
-
+        String name = "prasad";
+        System.out.println(nameUpperCAse(name));
     }
 
     /**
@@ -51,10 +52,5 @@ public class Main {
      */
     public static String createEmployeeId(int id) {
         return String.format("E%05d", id);
-    }
-
-    public static int sumOfNumbers(int n1, int n2){
-        int result = n1+n2;
-        return "SUm of two numbers are : "+result;
     }
 }
