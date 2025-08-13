@@ -58,4 +58,18 @@ public class MainTest {
         String actual = Main.createEmployeeId(id);
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
+    @Test
+    public void testChangeNameWithLower(){
+        String name = "prasad";
+        String expected = "PRASAD";
+        String acutal = Main.nameUpperCase(name);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
+     @Test
+    public void testChangeNameWithUpper(){
+        String name = "PRASAD";
+        String expected = "PRASAD";
+        String acutal = Main.nameUpperCase(name);
+        assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
+    }
 }
