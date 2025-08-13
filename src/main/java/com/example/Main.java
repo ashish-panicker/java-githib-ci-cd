@@ -1,5 +1,7 @@
 package com.example;
 
+import javax.management.ConstructorParameters;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello from Java CI/CD");
@@ -46,10 +48,11 @@ public class Main {
      * Creates a unique employee ID starting with 'E' followed by a zero-padded
      * number.
      * * @param id the numeric part of the employee ID
+     * @param departmentCode
      * * @return the formatted employee ID string
      * * Example: If id is 45, the returned string will be "E00045".
      */
-    public static String createEmployeeId(int id) {
-        return String.format("E%05d", id);
+    public static String createEmployeeId(int id,String departmentCode) {
+        return String.format("E%05d-%s", id,departmentCode);
     }
 }
