@@ -50,15 +50,16 @@ public class Main {
      * * @return the formatted employee ID string
      * * Example: If id is 45, the returned string will be "E00045".
      */
-    public static String createEmployeeId(int id) {
-        return String.format("E%05d", id);
-    }
-    /*
-     *change lower case letter to upper case
-     * *@param name
-     * @return upper case name
+    
+    /**
+     * Returns the sum of two integers.
+     *
+     * @param a first number
+     * @param b second number
+     * @return sum of a and b
      */
-     public static String nameUpperCase(String name) {
-        return name.toUpperCase();
+    public static int sum(int a, int b) {
+    return a + b;
     }
+
 }
